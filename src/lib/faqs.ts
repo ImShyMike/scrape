@@ -5,7 +5,7 @@ export const faqs = [
 	},
 	{
 		q: 'What can I make?',
-		a: 'You can make a <a href="https://en.wikipedia.org/wiki/Web_scraping" target="_blank" rel="noopener noreferrer" class="underline">web scraper, crawler, or spider</a>! Some examples include <a href="https://github.com/xroche/httrack" target="_blank" rel="noopener noreferrer" class="underline">HTTrack</a> and <a href="https://github.com/scrapy/scrapy" target="_blank" rel="noopener noreferrer" class="underline">Scrapy</a>'
+		a: 'You can make a <a href="https://en.wikipedia.org/wiki/Web_scraping" target="_blank" rel="noopener noreferrer" class="underline">web scraper, crawler, or spider</a>! Some examples include <a href="https://github.com/xroche/httrack" target="_blank" rel="noopener noreferrer" class="underline">HTTrack</a> and <a href="https://github.com/scrapy/scrapy" target="_blank" rel="noopener noreferrer" class="underline">Scrapy</a>!'
 	},
 	{
 		q: 'When does <span class="font-title text-3xl sm:text-4xl">scrape</span> end?',
