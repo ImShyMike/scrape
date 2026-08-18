@@ -1,7 +1,7 @@
 export const faqs = [
 	{
 		q: 'What is <span class="font-title text-3xl sm:text-4xl">scrape</span>?',
-		a: '<span class="font-title text-3xl sm:text-4xl">scrape</span> is a Hack Club YSWS (You Ship We Ship) where you make a web scraper/crawler/spider and get a cute spider plushy!'
+		a: '<span class="font-title text-3xl sm:text-4xl">scrape</span> is a Hack Club YSWS (You Ship We Ship) where you make a web scraper/crawler/spider and get a cute spider plushie!'
 	},
 	{
 		q: 'What can I make?',

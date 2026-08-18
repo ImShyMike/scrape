@@ -3,7 +3,7 @@
 	import hackClubFlag from '$lib/assets/hack-club-flag.svg';
 	import scrolldown from '$lib/assets/scrolldown.svg';
 	import cobweb from '$lib/assets/cobweb.png';
-	import spiderPlushy from '$lib/assets/cute-spider-plushy.png';
+	import spiderPlushie from '$lib/assets/cute-spider-plushie.png';
 	import { faqs } from '$lib/faqs';
 
 	let openIndex = $state(0);
@@ -51,7 +51,7 @@
 >
 	<h1 class="font-title text-[30vw] leading-none text-ink sm:text-[20vw]">scrape</h1>
 	<p class="max-w-3xl -translate-y-5 text-2xl text-slate sm:text-4xl">
-		make a web scraper, get a spider plushy
+		make a web scraper, get a spider plushie
 	</p>
 	<div class="mt-4 flex flex-wrap justify-center gap-6">
 		<a
@@ -169,6 +169,10 @@
 		class="cursor-pointer"
 		aria-label="say hi to the spider"
 	>
-		<img src={spiderPlushy} alt="cute spider plushy" class="w-24 rotate-14 sm:w-32 sm:scale-125" />
+		<img
+			src={spiderPlushie}
+			alt="cute spider plushie"
+			class="w-24 rotate-14 sm:w-32 sm:scale-125"
+		/>
 	</button>
 </div>
