@@ -3,38 +3,7 @@
 	import hackClubFlag from '$lib/assets/hack-club-flag.svg';
 	import scrolldown from '$lib/assets/scrolldown.svg';
 	import cobweb from '$lib/assets/cobweb.png';
-
-	const faqs = [
-		{
-			q: 'What is scrape?',
-			a: 'Scrape is a Hack Club YSWS (You Ship We Ship) where you make a web scraper/crawler and get a cute spider plushy!'
-		},
-		{
-			q: 'When does scrape end?',
-			a: 'Scrape is running until August 20th at 2pm EDT! ',
-			link: {
-				text: '(timezone converter)',
-				href: 'https://time.cs50.io/20260820T1300-0500?title=scraper+YSWS+deadline'
-			}
-		},
-		{
-			q: 'What is a YSWS?',
-			a: 'A YSWS (or You Ship We Ship) is a Hack Club program where you ship (make) something and we ship (send) you something in return!'
-		},
-		{
-			q: 'Can I participate?',
-			a: 'Any teenager ages 13-18 (under 19) can participate!'
-		},
-		{
-			q: 'Do I need to use Hackatime?',
-			a: 'Using hackatime is highly recommended, but not required.'
-		},
-		{
-			q: 'I have more questions!',
-			a: 'Send them in the Slack at ',
-			link: { text: '#scrape', href: 'https://app.slack.com/client/E09V59WQY1E/C0BR3PBD61J' }
-		}
-	];
+	import { faqs } from '$lib/faqs';
 
 	let openIndex = $state(0);
 
@@ -95,18 +64,13 @@
 				onclick={() => toggle(i)}
 				class="w-full cursor-pointer px-8 py-5 text-left"
 			>
-				<span class="text-2xl text-ink sm:text-3xl">&gt; {faq.q}</span>
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+				<span class="text-2xl text-ink sm:text-3xl">&gt; {@html faq.q}</span>
 			</button>
 			{#if openIndex === i}
 				<div transition:slide={{ duration: 200 }}>
-					<p class="px-8 pb-6 text-xl text-slate sm:text-2xl">
-						{faq.a}{#if faq.link}<a
-								href={faq.link.href}
-								target="_blank"
-								rel="noopener noreferrer external"
-								class="cursor-pointer underline">{faq.link.text}</a
-							>{/if}
-					</p>
+					<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+					<p class="px-8 pb-6 text-xl text-slate sm:text-2xl">{@html faq.a}</p>
 				</div>
 			{/if}
 		</div>
@@ -153,7 +117,7 @@
 		>
 	</nav>
 	<p class="text-sage">
-		scrape is a YSWS program ran by
+		<span class="font-title">scrape</span> is a YSWS program run by
 		<a
 			href="https://hackclub.com"
 			target="_blank"
