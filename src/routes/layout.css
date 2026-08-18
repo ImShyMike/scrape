@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+	--font-heading: 'Zen Dots', sans-serif;
+	--font-sans: 'DM Sans', sans-serif;
+	--color-cream: #e8eddf;
+	--color-sage: #cfdbd5;
+	--color-yellow: #f5cb5c;
+	--color-ink: #242423;
+	--color-slate: #333533;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--color-cream);
+	font-family: var(--font-sans);
+}
