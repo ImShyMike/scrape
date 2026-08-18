@@ -10,10 +10,10 @@
 		},
 		{
 			q: 'When does scrape end?',
-			a: 'Scrape is running until August 19th at 5pm EST! ',
+			a: 'Scrape is running until August 20th at 2pm EST! ',
 			link: {
 				text: '(timezone converter)',
-				href: 'https://time.cs50.io/20260819T1700-0500?title=scraper+YSWS+deadline'
+				href: 'https://time.cs50.io/20260820T1400-0500?title=scraper+YSWS+deadline'
 			}
 		},
 		{
