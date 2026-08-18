@@ -62,7 +62,9 @@
 	class="relative flex min-h-screen flex-col items-center justify-center gap-0 px-6 text-center"
 >
 	<h1 class="font-title text-[30vw] leading-none text-ink sm:text-[20vw]">scrape</h1>
-	<p class="-translate-y-5 max-w-3xl text-2xl text-slate sm:text-4xl">make a web scraper, get a spider plushy</p>
+	<p class="max-w-3xl -translate-y-5 text-2xl text-slate sm:text-4xl">
+		make a web scraper, get a spider plushy
+	</p>
 	<div class="mt-4 flex flex-wrap justify-center gap-6">
 		<a
 			href="https://forms.hackclub.com/t/2hcaSwewZjus"
