@@ -2,6 +2,7 @@
 	import { slide } from 'svelte/transition';
 	import hackClubFlag from '$lib/assets/hack-club-flag.svg';
 	import scrolldown from '$lib/assets/scrolldown.svg';
+	import cobweb from '$lib/assets/cobweb.png';
 
 	const faqs = [
 		{
@@ -21,7 +22,7 @@
 			a: 'A YSWS (or You Ship We Ship) is a Hack Club program where you ship (make) something and we ship (send) you something in return!'
 		},
 		{
-			q: 'Can i participate?',
+			q: 'Can I participate?',
 			a: 'Any teenager ages 13-18 (under 19) can participate!'
 		},
 		{
@@ -51,11 +52,17 @@
 	<img src={hackClubFlag} alt="Hack Club" class="w-70 sm:w-85" />
 </a>
 
+<img
+	src={cobweb}
+	alt="cobweb"
+	class="pointer-events-none absolute top-0 right-0 w-40 -scale-x-100 sm:w-lg"
+/>
+
 <section
-	class="relative flex min-h-screen flex-col items-center justify-center gap-8 px-6 text-center"
+	class="relative flex min-h-screen flex-col items-center justify-center gap-0 px-6 text-center"
 >
-	<h1 class="font-heading text-[15vw] leading-none text-ink sm:text-9xl">scrape</h1>
-	<p class="max-w-3xl text-2xl text-slate sm:text-4xl">make a web scraper, get a spider plushy</p>
+	<h1 class="font-title text-[30vw] leading-none text-ink sm:text-[20vw]">scrape</h1>
+	<p class="-translate-y-5 max-w-3xl text-2xl text-slate sm:text-4xl">make a web scraper, get a spider plushy</p>
 	<div class="mt-4 flex flex-wrap justify-center gap-6">
 		<a
 			href="https://forms.hackclub.com/t/2hcaSwewZjus"

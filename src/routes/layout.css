@@ -2,8 +2,15 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
+@font-face {
+	font-family: 'Midnight Spider';
+	src: url('../lib/assets/fonts/MidnightSpider.ttf') format('truetype');
+	font-display: swap;
+}
+
 @theme {
 	--font-heading: 'Zen Dots', sans-serif;
+	--font-title: 'Midnight Spider', sans-serif;
 	--font-sans: 'DM Sans', sans-serif;
 	--color-cream: #e8eddf;
 	--color-sage: #cfdbd5;
