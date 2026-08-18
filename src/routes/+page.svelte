@@ -154,11 +154,11 @@
 	</p>
 </footer>
 
-<div class="fixed -bottom-2 sm:-bottom-1 left-2 sm:left-9 z-50">
+<div class="fixed -bottom-2 left-2 z-50 sm:-bottom-1 sm:left-9">
 	{#if greet}
 		<div
 			transition:fade={{ duration: 150 }}
-			class="absolute bottom-[125%] left-[140%] sm:left-[90%] mb-2 w-64 max-w-[70vw] -translate-x-1/2 rounded-xl bg-ink px-4 py-3 text-left text-lg text-cream"
+			class="absolute bottom-[125%] left-[140%] mb-2 w-64 max-w-[70vw] -translate-x-1/2 rounded-xl bg-ink px-4 py-3 text-left text-lg text-cream sm:left-[90%]"
 		>
 			{typed}
 		</div>
@@ -169,6 +169,6 @@
 		class="cursor-pointer"
 		aria-label="say hi to the spider"
 	>
-		<img src={spiderPlushy} alt="cute spider plushy" class="w-24 sm:w-32 rotate-14 sm:scale-125" />
+		<img src={spiderPlushy} alt="cute spider plushy" class="w-24 rotate-14 sm:w-32 sm:scale-125" />
 	</button>
 </div>
