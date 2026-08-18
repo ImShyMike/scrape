@@ -9,7 +9,7 @@ export const faqs = [
 	},
 	{
 		q: 'When does <span class="font-title text-3xl sm:text-4xl">scrape</span> end?',
-		a: '<span class="font-title text-3xl sm:text-4xl">scrape</span> is running until August 20th at 8pm EDT! <a href="https://time.cs50.io/20260820T1300-1100?title=scraper+YSWS+deadline" target="_blank" rel="noopener noreferrer" class="underline">(timezone converter)</a>'
+		a: '<span class="font-title text-3xl sm:text-4xl">scrape</span> is running until August 20th at 11:pm EDT! <a href="https://time.cs50.io/20260820T1300-1559?title=scraper+YSWS+deadline" target="_blank" rel="noopener noreferrer" class="underline">(timezone converter)</a>'
 	},
 	{
 		q: 'What is a YSWS?',
