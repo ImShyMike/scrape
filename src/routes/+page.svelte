@@ -10,7 +10,7 @@
 	let greet = $state(false);
 	let typed = $state('');
 
-	const greetMessage = 'Hi!! Did you know that im the prize for this YSWS? :D';
+	const greetMessage = "Hi!! Did you know I'm the prize for this YSWS? :D :D";
 
 	$effect(() => {
 		if (!greet) {
