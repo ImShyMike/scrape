@@ -1,11 +1,30 @@
 <script lang="ts">
-	import { slide } from 'svelte/transition';
+	import { slide, fade } from 'svelte/transition';
 	import hackClubFlag from '$lib/assets/hack-club-flag.svg';
 	import scrolldown from '$lib/assets/scrolldown.svg';
 	import cobweb from '$lib/assets/cobweb.png';
+	import spiderPlushy from '$lib/assets/cute-spider-plushy.png';
 	import { faqs } from '$lib/faqs';
 
 	let openIndex = $state(0);
+	let greet = $state(false);
+	let typed = $state('');
+
+	const greetMessage = 'Hi!! Did you know that im the prize for this YSWS? :D';
+
+	$effect(() => {
+		if (!greet) {
+			typed = '';
+			return;
+		}
+		let i = 0;
+		const id = setInterval(() => {
+			i++;
+			typed = greetMessage.slice(0, i);
+			if (i >= greetMessage.length) clearInterval(id);
+		}, 40);
+		return () => clearInterval(id);
+	});
 
 	function toggle(i: number) {
 		openIndex = openIndex === i ? -1 : i;
@@ -134,3 +153,22 @@
 		with &lt;3
 	</p>
 </footer>
+
+<div class="fixed -bottom-2 sm:-bottom-1 left-2 sm:left-9 z-50">
+	{#if greet}
+		<div
+			transition:fade={{ duration: 150 }}
+			class="absolute bottom-[125%] left-[140%] sm:left-[90%] mb-2 w-64 max-w-[70vw] -translate-x-1/2 rounded-xl bg-ink px-4 py-3 text-left text-lg text-cream"
+		>
+			{typed}
+		</div>
+	{/if}
+	<button
+		type="button"
+		onclick={() => (greet = !greet)}
+		class="cursor-pointer"
+		aria-label="say hi to the spider"
+	>
+		<img src={spiderPlushy} alt="cute spider plushy" class="w-24 sm:w-32 rotate-14 sm:scale-125" />
+	</button>
+</div>
