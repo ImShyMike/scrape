@@ -1,5 +1,9 @@
 export const faqs = [
 	{
+		q: 'Is there an hour requirement?',
+		a: "Not really, but I can't promise you'll get a plushie if you spend less than 3 hour on your project :("
+	},
+	{
 		q: 'What is <span class="font-title text-3xl sm:text-4xl">scrape</span>?',
 		a: '<span class="font-title text-3xl sm:text-4xl">scrape</span> is a Hack Club YSWS (You Ship We Ship) where you make a web scraper/crawler/spider and get a cute spider plushie!'
 	},
